@@ -4,3 +4,10 @@ export function fetchCount(amount = 1) {
     setTimeout(() => resolve({ data: amount }), 500)
   );
 }
+
+export const fetchLocalData = async () => {
+  // const result = await fetch(`${process.env.PUBLIC_URL}/data.json`)
+  const result = await fetch(`data.json`)
+  const obj  = await result.json()
+  return obj.amount
+}

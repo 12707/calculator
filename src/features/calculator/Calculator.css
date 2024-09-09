@@ -1,0 +1,10 @@
+.calculator {
+    width: 600px;
+    border: 1px solid black;
+}
+
+.header {
+    font-weight: bolder;
+    font-size: larger;
+    font-style: italic;
+}
